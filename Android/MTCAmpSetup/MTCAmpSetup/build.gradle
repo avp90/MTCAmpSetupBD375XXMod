@@ -1,0 +1,92 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    defaultConfig {
+        applicationId "com.microntek.ampsetup"
+        minSdkVersion 22
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    signingConfigs {
+        mtc {
+            storeFile file('../KeyStore/keystore')
+            storePassword "android"
+            keyAlias "platform-xx"
+            keyPassword "android"
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.mtc
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.mtc
+        }
+    }
+
+    flavorDimensions 'version'
+    productFlavors {
+        root {
+            dimension "version"
+        }
+        mod {
+            dimension "version"
+            applicationId = "com.microntek.ampsetup.mod"
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+
+    preBuild {
+        doLast {
+            def imlFile = file(project.name + ".iml")
+            println 'Change ' + project.name + '.iml order'
+            try {
+                def parsedXml = (new XmlParser()).parse(imlFile)
+                def jdkNode = parsedXml.component[1].orderEntry.find { it.'@type' == 'jdk' }
+                parsedXml.component[1].remove(jdkNode)
+                def sdkString = "Android API " + android.compileSdkVersion.substring("android-".length()) + " Platform"
+                println 'what' + sdkString
+                new Node(parsedXml.component[1], 'orderEntry', ['type': 'jdk', 'jdkName': sdkString, 'jdkType': 'Android SDK'])
+                groovy.xml.XmlUtil.serialize(parsedXml, new FileOutputStream(imlFile))
+            } catch (FileNotFoundException e) {
+                // nop, iml not found
+                println "no iml found"
+            }
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            //add here your logic to customize the name of the apk
+            outputFileName = "${project.name}${variant.productFlavors[0].name.toUpperCase()}.apk"
+        }
+        variant.assemble.doLast { assemble ->
+            //copy the apk in another directory, add here your
+            //logic to customize the destination folder
+            copy {
+                from variant.outputs*.outputFile
+                into "${project.rootDir}/Output/"
+            }
+            //if you don't want to delete the file after copying it comment the line below
+            //delete variant.outputs*.outputFile
+        }
+    }
+}
+
+dependencies {
+    compileOnly fileTree(dir: '../SystemLibs', include: ['*.jar'])
+    compileOnly project(path: ':MTCCarManager')
+    debugImplementation project(path: ':MTCCarManager')
+    implementation 'org.jetbrains:annotations-java5:15.0'
+}

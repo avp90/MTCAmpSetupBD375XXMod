@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">功放設置</string>
+    <string name="amp_sound">聲場</string>
+    <string name="amp_balance">音場</string>
+    <string name="amp_sound_mode1">全車模式</string>
+    <string name="amp_sound_mode2">駕駛模式</string>
+    <string name="amp_sound_mode3">前車模式</string>
+    <string name="amp_sound_mode4">後車模式</string>
+    <string name="amp_sound_mode5">用戶模式</string>
+    <string name="amp_sound_mode6">副駕駛</string>
+    <string name="amp_sound_mode7">後排左</string>
+    <string name="amp_sound_mode8">後排右</string>
+    <string name="loudness">響度</string>
+    <string name="music_style0">用戶</string>
+    <string name="music_style1">搖滾</string>
+    <string name="music_style2">流行</string>
+    <string name="music_style3">爵士</string>
+    <string name="music_style4">經典</string>
+    <string name="music_style5">平直</string>
+    <string name="music_style6">人聲</string>
+    <string name="custom_1">自定義1</string>
+    <string name="custom_2">自定義2</string>
+    <string name="custom_3">自定義3</string>
+    <string name="sound_common">普通</string>
+    <string name="sound_specialty">專業</string>
+    <string name="delay">延時</string>
+    <string name="volume">增益</string>
+    <string name="trumpet_h_distance">橫向</string>
+    <string name="trumpet_v_distance">縱向</string>
+    <string name="speaker_distance_setting">汽車喇叭距離設置</string>
+    <string name="affirm">確認</string>
+</resources>

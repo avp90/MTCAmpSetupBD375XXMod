@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">アンプ</string>
+    <string name="amp_sound">声場</string>
+    <string name="amp_balance">音場</string>
+    <string name="amp_sound_mode1">全部モード</string>
+    <string name="amp_sound_mode2">運転モード</string>
+    <string name="amp_sound_mode3">副運転モード</string>
+    <string name="amp_sound_mode4">後の車のモデル</string>
+    <string name="amp_sound_mode5">ユーザーモード</string>
+    <string name="amp_sound_mode6">共同パイロット</string>
+    <string name="amp_sound_mode7">バック左行</string>
+    <string name="amp_sound_mode8">右、後列</string>
+    <string name="loudness">音声</string>
+    <string name="music_style0">カスタム</string>
+    <string name="music_style1">ロック</string>
+    <string name="music_style2">ポップ</string>
+    <string name="music_style3">ジャズ</string>
+    <string name="music_style4">クラシック</string>
+    <string name="music_style5">フラット</string>
+    <string name="music_style6">ボーカル</string>
+    <string name="custom_1">カスタム1</string>
+    <string name="custom_2">カスタム2</string>
+    <string name="custom_3">カスタム3</string>
+    <string name="sound_common">一般</string>
+    <string name="sound_specialty">専門</string>
+    <string name="delay">遅延</string>
+    <string name="volume">ゲイン</string>
+    <string name="trumpet_h_distance">側面</string>
+    <string name="trumpet_v_distance">垂直</string>
+    <string name="speaker_distance_setting">車のスピーカーの距離設定</string>
+    <string name="affirm">確かめます</string>
+</resources>

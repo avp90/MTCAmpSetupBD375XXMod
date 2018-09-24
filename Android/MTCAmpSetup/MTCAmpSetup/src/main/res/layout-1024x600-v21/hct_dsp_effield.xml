@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:mtc="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@drawable/dsp_eq_left_bg" android:paddingLeft="2px" android:paddingTop="3px" android:paddingRight="3px" android:paddingBottom="4px" android:layout_width="904px" android:layout_height="485px" android:layoutDirection="ltr">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+        <CheckBox android:id="@+id/ef_checkbox" android:background="@drawable/dsp_checkbox1" android:visibility="gone" android:layout_width="94px" android:layout_height="72px" android:layout_marginTop="45px" android:button="@null"/>
+        <View android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+        <Button android:textSize="18px" android:textColor="@drawable/custontextcolor" android:id="@+id/ef_custom1" android:background="@drawable/custom_btn" android:paddingBottom="22px" android:layout_width="94px" android:layout_height="70px" android:text="@string/custom_1" android:maxLines="1"/>
+        <View android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+        <Button android:textSize="18px" android:textColor="@drawable/custontextcolor" android:id="@+id/ef_custom2" android:background="@drawable/custom_btn" android:paddingBottom="22px" android:layout_width="94px" android:layout_height="70px" android:text="@string/custom_2" android:maxLines="1"/>
+        <View android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+        <Button android:textSize="18px" android:textColor="@drawable/custontextcolor" android:id="@+id/ef_custom3" android:background="@drawable/custom_btn" android:paddingBottom="22px" android:layout_width="94px" android:layout_height="70px" android:text="@string/custom_3" android:maxLines="1"/>
+        <View android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+        <Button android:id="@+id/ef_reset" android:background="@drawable/btn_reset1" android:layout_width="94px" android:layout_height="72px"/>
+    </LinearLayout>
+    <View android:background="#818181" android:layout_width="2px" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1.5">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28px">
+            <CheckBox android:layout_gravity="center_horizontal" android:id="@+id/lud_check" android:background="@drawable/dsp_checkbox" android:layout_width="66px" android:layout_height="48px" android:button="@null"/>
+            <TextView android:textSize="20px" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="30px" android:layout_marginTop="5px" android:text="@string/lud" android:maxLines="1"/>
+        </LinearLayout>
+        <ImageView android:background="@drawable/lud_scale_left" android:layout_width="25px" android:layout_height="278px" android:layout_marginLeft="27px" android:layout_marginTop="176px"/>
+        <ImageView android:layout_gravity="right" android:background="@drawable/lud_scale_right" android:layout_width="25px" android:layout_height="278px" android:layout_marginTop="176px" android:layout_marginRight="29px"/>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="left" android:orientation="vertical" android:layout_width="56px" android:layout_height="match_parent" android:layout_marginLeft="40px" android:layout_marginTop="141px">
+            <ImageView android:layout_width="32px" android:layout_height="14px" android:src="@drawable/icon_right"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="304px" android:layout_marginTop="10px">
+                <ImageView android:layout_gravity="center" android:background="@drawable/lud_seekbar_bg" android:layout_width="27px" android:layout_height="265px"/>
+                <com.microntek.ampsetup.VerticalSeekBar android:layout_gravity="center" android:id="@+id/lud_tseekbar" android:paddingLeft="20px" android:paddingRight="20px" android:layout_width="match_parent" android:layout_height="match_parent" android:max="4" android:progress="0" android:progressDrawable="@drawable/dsp_left_seekbar" android:thumb="@drawable/eq_left_thumb" android:thumbOffset="20px" android:splitTrack="false"/>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="right" android:orientation="vertical" android:layout_width="56px" android:layout_height="match_parent" android:layout_marginTop="141px" android:layout_marginRight="40px">
+            <ImageView android:layout_width="32px" android:layout_height="14px" android:src="@drawable/icon_left"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="304px" android:layout_marginTop="10px">
+                <ImageView android:layout_gravity="center" android:background="@drawable/lud_seekbar_bg" android:layout_width="27px" android:layout_height="265px"/>
+                <com.microntek.ampsetup.VerticalSeekBar android:layout_gravity="center" android:id="@+id/lud_bseekbar" android:paddingLeft="20px" android:paddingRight="20px" android:layout_width="match_parent" android:layout_height="match_parent" android:max="4" android:progress="0" android:progressDrawable="@drawable/dsp_left_seekbar" android:thumb="@drawable/eq_left_thumb" android:thumbOffset="20px" android:splitTrack="false"/>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <View android:background="#818181" android:layout_width="2px" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28px">
+            <CheckBox android:layout_gravity="center_horizontal" android:id="@+id/spa_check" android:background="@drawable/dsp_checkbox" android:layout_width="66px" android:layout_height="48px" android:button="@null"/>
+            <TextView android:textSize="20px" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="30px" android:layout_marginTop="5px" android:text="@string/spa" android:maxLines="1"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/spa_scale" android:layout_width="25px" android:layout_height="278px" android:layout_marginTop="176px" android:layout_marginRight="22px"/>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="56px" android:layout_height="match_parent" android:layout_marginLeft="8px" android:layout_marginTop="141px">
+            <ImageView android:background="@drawable/icon_g" android:layout_width="20px" android:layout_height="20px"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="304px" android:layout_marginTop="4px">
+                <ImageView android:layout_gravity="center" android:background="@drawable/phat_seekbar_bg" android:layout_width="27px" android:layout_height="265px"/>
+                <com.microntek.ampsetup.VerticalSeekBar android:layout_gravity="center" android:id="@+id/spa_seekbar" android:paddingLeft="20px" android:paddingRight="20px" android:layout_width="match_parent" android:layout_height="match_parent" android:max="3" android:progress="0" android:progressDrawable="@drawable/dsp_left_seekbar" android:thumb="@drawable/eq_left_thumb" android:thumbOffset="20px" android:splitTrack="false"/>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <View android:background="#818181" android:layout_width="2px" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28px">
+            <CheckBox android:layout_gravity="center_horizontal" android:id="@+id/cut_check" android:background="@drawable/dsp_checkbox" android:layout_width="66px" android:layout_height="48px" android:button="@null"/>
+            <TextView android:textSize="20px" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="30px" android:layout_marginTop="5px" android:text="@string/cut_freq" android:maxLines="1"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/cut_scale" android:layout_width="41px" android:layout_height="278px" android:layout_marginTop="176px" android:layout_marginRight="25px"/>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="56px" android:layout_height="match_parent" android:layout_marginLeft="12px" android:layout_marginTop="141px">
+            <ImageView android:background="@drawable/icon_f" android:layout_width="20px" android:layout_height="20px"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="304px" android:layout_marginTop="4px">
+                <ImageView android:layout_gravity="center" android:background="@drawable/phat_seekbar_bg" android:layout_width="27px" android:layout_height="265px"/>
+                <com.microntek.ampsetup.VerticalSeekBar android:layout_gravity="center" android:id="@+id/cut_seekbar" android:paddingLeft="20px" android:paddingRight="20px" android:layout_width="match_parent" android:layout_height="match_parent" android:max="3" android:progress="0" android:progressDrawable="@drawable/dsp_left_seekbar" android:thumb="@drawable/eq_left_thumb" android:thumbOffset="20px" android:splitTrack="false"/>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <View android:background="#818181" android:layout_width="2px" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1.5">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28px">
+            <CheckBox android:layout_gravity="center" android:id="@+id/sub_check" android:background="@drawable/dsp_checkbox" android:layout_width="66px" android:layout_height="48px" android:button="@null"/>
+            <TextView android:textSize="20px" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="30px" android:layout_marginTop="5px" android:text="@string/sub" android:maxLines="1"/>
+        </LinearLayout>
+        <ImageView android:background="@drawable/bass_scale_right" android:layout_width="43px" android:layout_height="278px" android:layout_marginLeft="10px" android:layout_marginTop="176px"/>
+        <ImageView android:layout_gravity="right" android:background="@drawable/bass_scale_left" android:layout_width="25px" android:layout_height="278px" android:layout_marginTop="176px" android:layout_marginRight="29px"/>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="left" android:orientation="vertical" android:layout_width="56px" android:layout_height="match_parent" android:layout_marginLeft="40px" android:layout_marginTop="141px">
+            <ImageView android:background="@drawable/icon_f" android:layout_width="20px" android:layout_height="20px"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="304px" android:layout_marginTop="4px">
+                <ImageView android:layout_gravity="center" android:background="@drawable/bass_gseekbar_bg" android:layout_width="27px" android:layout_height="265px"/>
+                <com.microntek.ampsetup.VerticalSeekBar android:layout_gravity="center" android:id="@+id/sub_lseekbar" android:paddingLeft="20px" android:paddingRight="20px" android:layout_width="match_parent" android:layout_height="match_parent" android:max="4" android:progress="0" android:progressDrawable="@drawable/dsp_left_seekbar" android:thumb="@drawable/eq_left_thumb" android:thumbOffset="20px" android:splitTrack="false"/>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="right" android:orientation="vertical" android:layout_width="56px" android:layout_height="match_parent" android:layout_marginTop="141px" android:layout_marginRight="40px">
+            <ImageView android:background="@drawable/icon_g" android:layout_width="20px" android:layout_height="20px"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="304px" android:layout_marginTop="4px">
+                <ImageView android:layout_gravity="center" android:background="@drawable/bass_fseekbar_bg" android:layout_width="27px" android:layout_height="265px"/>
+                <com.microntek.ampsetup.VerticalSeekBar android:layout_gravity="center" android:id="@+id/sub_rseekbar" android:paddingLeft="20px" android:paddingRight="20px" android:layout_width="match_parent" android:layout_height="match_parent" android:max="5" android:progress="0" android:progressDrawable="@drawable/dsp_left_seekbar" android:thumb="@drawable/eq_left_thumb" android:thumbOffset="20px" android:splitTrack="false"/>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <View android:background="#818181" android:layout_width="2px" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28px">
+            <CheckBox android:layout_gravity="center_horizontal" android:id="@+id/efsub_check" android:background="@drawable/dsp_checkbox" android:layout_width="66px" android:layout_height="48px" android:button="@null"/>
+            <TextView android:textSize="20px" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="30px" android:layout_marginTop="5px" android:text="@string/frequency_sub" android:maxLines="1"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/sub_scale" android:layout_width="25px" android:layout_height="278px" android:layout_marginTop="176px" android:layout_marginRight="22px"/>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="56px" android:layout_height="match_parent" android:layout_marginLeft="8px" android:layout_marginTop="141px">
+            <ImageView android:background="@drawable/icon_g" android:layout_width="20px" android:layout_height="20px"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="304px" android:layout_marginTop="4px">
+                <ImageView android:layout_gravity="center" android:background="@drawable/bass_gseekbar_bg" android:layout_width="27px" android:layout_height="265px"/>
+                <com.microntek.ampsetup.VerticalSeekBar android:layout_gravity="center" android:id="@+id/efsub_seekbar" android:paddingLeft="20px" android:paddingRight="20px" android:layout_width="match_parent" android:layout_height="match_parent" android:max="20" android:progress="0" android:progressDrawable="@drawable/dsp_left_seekbar" android:thumb="@drawable/eq_left_thumb" android:thumbOffset="20px" android:splitTrack="false"/>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

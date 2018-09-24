@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ajustes Amp</string>
+    <string name="amp_sound">Campo</string>
+    <string name="amp_balance">Efecto</string>
+    <string name="amp_sound_mode1">Todos</string>
+    <string name="amp_sound_mode2">Conductor</string>
+    <string name="amp_sound_mode3">El copiloto</string>
+    <string name="amp_sound_mode4">Rear</string>
+    <string name="amp_sound_mode5">Usuario</string>
+    <string name="amp_sound_mode6">Copiloto</string>
+    <string name="amp_sound_mode7">izquierda fila</string>
+    <string name="amp_sound_mode8">Derecha, fila</string>
+    <string name="loudness">volumen</string>
+    <string name="music_style0">usuario</string>
+    <string name="music_style1">ROCK</string>
+    <string name="music_style2">POP</string>
+    <string name="music_style3">JAZZ</string>
+    <string name="music_style4">CLASSIC</string>
+    <string name="music_style5">FLAT</string>
+    <string name="music_style6">vocal</string>
+    <string name="custom_1">Personalizado 1</string>
+    <string name="custom_2">Personalizado 2</string>
+    <string name="custom_3">Personalizado 3</string>
+    <string name="sound_common">ordinario</string>
+    <string name="sound_specialty">especialidad</string>
+    <string name="delay">retraso</string>
+    <string name="volume">ganancia</string>
+    <string name="trumpet_h_distance">lateral</string>
+    <string name="trumpet_v_distance">vertical</string>
+    <string name="speaker_distance_setting">Altavoces del coche del ajuste de distancia</string>
+    <string name="affirm">confirmar</string>
+</resources>

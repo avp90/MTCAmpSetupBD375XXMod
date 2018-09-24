@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Regolazioni suoni</string>
+    <string name="amp_sound">Sonoro</string>
+    <string name="amp_balance">Voce</string>
+    <string name="amp_sound_mode1">Modalità auto</string>
+    <string name="amp_sound_mode2">Guida</string>
+    <string name="amp_sound_mode3">Il co-pilota</string>
+    <string name="amp_sound_mode4">Posteriore</string>
+    <string name="amp_sound_mode5">Utente</string>
+    <string name="amp_sound_mode6">co-pilot</string>
+    <string name="amp_sound_mode7">posteriore sinistra</string>
+    <string name="amp_sound_mode8">posteriore destra</string>
+    <string name="loudness">Loud</string>
+    <string name="music_style0">Custom</string>
+    <string name="music_style1">Rock</string>
+    <string name="music_style2">Pop</string>
+    <string name="music_style3">Jazz</string>
+    <string name="music_style4">Classica</string>
+    <string name="music_style5">Flat</string>
+    <string name="music_style6">Voce</string>
+    <string name="custom_1">personalizzato 1</string>
+    <string name="custom_2">personalizzato 2</string>
+    <string name="custom_3">personalizzato 3</string>
+    <string name="sound_common">ordinario</string>
+    <string name="sound_specialty">specialità</string>
+    <string name="delay">ritardo</string>
+    <string name="volume">guadagno</string>
+    <string name="trumpet_h_distance">laterale</string>
+    <string name="trumpet_v_distance">verticale</string>
+    <string name="speaker_distance_setting">Altoparlanti per auto impostazione della distanza</string>
+    <string name="affirm">confermare</string>
+</resources>

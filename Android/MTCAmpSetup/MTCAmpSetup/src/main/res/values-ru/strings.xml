@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Эквалайзер</string>
+    <string name="amp_sound">Поле</string>
+    <string name="amp_balance">Эффекты</string>
+    <string name="amp_sound_mode1">По умолчанию</string>
+    <string name="amp_sound_mode2">Водитель</string>
+    <string name="amp_sound_mode3">Пассажир</string>
+    <string name="amp_sound_mode4">Задние</string>
+    <string name="amp_sound_mode5">Пользователь</string>
+    <string name="amp_sound_mode6">Второй пилот</string>
+    <string name="amp_sound_mode7">Задние слева</string>
+    <string name="amp_sound_mode8">Задние право</string>
+    <string name="loudness">Loud</string>
+    <string name="music_style0">Пользовательский</string>
+    <string name="music_style1">Рок</string>
+    <string name="music_style2">Поп</string>
+    <string name="music_style3">Джаз</string>
+    <string name="music_style4">Классик</string>
+    <string name="music_style5">Плоский</string>
+    <string name="music_style6">Вокал</string>
+    <string name="custom_1">Пользовательский 1</string>
+    <string name="custom_2">Пользовательский 2</string>
+    <string name="custom_3">Пользовательский 3</string>
+    <string name="sound_common">обычный</string>
+    <string name="sound_specialty">специальность</string>
+    <string name="delay">задержка</string>
+    <string name="volume">коэффициент усиления</string>
+    <string name="trumpet_h_distance">боковой</string>
+    <string name="trumpet_v_distance">вертикальный</string>
+    <string name="speaker_distance_setting">Автомобильные колонки настройки расстояния</string>
+    <string name="affirm">подтвердить</string>
+</resources>

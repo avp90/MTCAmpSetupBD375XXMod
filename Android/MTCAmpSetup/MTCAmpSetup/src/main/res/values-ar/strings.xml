@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">إعدادات أمبير</string>
+    <string name="amp_sound">الميدان</string>
+    <string name="amp_effect">مجال الصوت</string>
+    <string name="amp_balance">تأثير</string>
+    <string name="amp_sound_mode1">جميع</string>
+    <string name="amp_sound_mode2">سائق</string>
+    <string name="amp_sound_mode3">الجبهة</string>
+    <string name="amp_sound_mode4">الخلفية</string>
+    <string name="amp_sound_mode5">المستخدم</string>
+    <string name="amp_sound_mode6">مساعد الطيار</string>
+    <string name="amp_sound_mode7">الظهير الايسر التوالي</string>
+    <string name="amp_sound_mode8">الحق، الصف الخلفي</string>
+    <string name="loudness">بريق</string>
+    <string name="music_style0">المستخدم</string>
+    <string name="music_style1">صخرة</string>
+    <string name="music_style2">شعبي</string>
+    <string name="music_style3">سيدي</string>
+    <string name="music_style4">كلاسيكي</string>
+    <string name="music_style5">مباشرة</string>
+    <string name="music_style6">صوتي</string>
+    <string name="custom_1">مخصص 1</string>
+    <string name="custom_2">مخصص 2</string>
+    <string name="custom_3">مخصص 3</string>
+    <string name="sound_common">عادي</string>
+    <string name="sound_specialty">تخصص</string>
+    <string name="delay">تأخير</string>
+    <string name="volume">ربح</string>
+    <string name="trumpet_h_distance">جانبي</string>
+    <string name="trumpet_v_distance">عمودي</string>
+    <string name="speaker_distance_setting">سيارة المتكلمين تحديد المسافة</string>
+    <string name="affirm">أكد</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:mtc="http://schemas.android.com/apk/res-auto">
+    <item android:state_pressed="true" android:drawable="@drawable/amp_b_right_sel"/>
+    <item android:state_focused="true" android:drawable="@drawable/amp_b_right_sel"/>
+    <item android:drawable="@drawable/amp_b_right_nor"/>
+</selector>

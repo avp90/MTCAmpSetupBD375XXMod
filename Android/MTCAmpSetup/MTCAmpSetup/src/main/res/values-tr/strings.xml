@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Amplifikatör</string>
+    <string name="amp_sound">Alan</string>
+    <string name="amp_balance">Eko</string>
+    <string name="amp_sound_mode1">Tümü</string>
+    <string name="amp_sound_mode2">Şoför</string>
+    <string name="amp_sound_mode3">Sağ Yolcu</string>
+    <string name="amp_sound_mode4">Arka</string>
+    <string name="amp_sound_mode5">Kullanıcı</string>
+    <string name="amp_sound_mode6">Ikinci pilot</string>
+    <string name="amp_sound_mode7">Arka sol</string>
+    <string name="amp_sound_mode8">Arka sağ</string>
+    <string name="loudness">Loud</string>
+    <string name="music_style0">Özel</string>
+    <string name="music_style1">Rock</string>
+    <string name="music_style2">Pop</string>
+    <string name="music_style3">Jazz</string>
+    <string name="music_style4">Klasik</string>
+    <string name="music_style5">Düz</string>
+    <string name="music_style6">Ses</string>
+    <string name="custom_1">Özel 1</string>
+    <string name="custom_2">Özel 2</string>
+    <string name="custom_3">Özel 3</string>
+    <string name="sound_common">sıradan</string>
+    <string name="sound_specialty">uzmanlık</string>
+    <string name="delay">gecikme</string>
+    <string name="volume">kazanç</string>
+    <string name="trumpet_h_distance">yanal</string>
+    <string name="trumpet_v_distance">dikey</string>
+    <string name="speaker_distance_setting">Araba hoparlörler mesafe ayar</string>
+    <string name="affirm">onaylamak</string>
+</resources>

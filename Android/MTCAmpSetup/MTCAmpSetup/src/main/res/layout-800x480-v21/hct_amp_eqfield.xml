@@ -1,0 +1,1125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="@dimen/left_panel_width"
+                    android:layout_height="@dimen/left_panel_height" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18px"
+                        android:layout_marginRight="5px"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/large_label"
+
+                            android:includeFontPadding="false"
+                            android:text="@string/amp_preamp" />
+
+                        <TextView
+                            android:id="@+id/inputG_value"
+                            style="@style/medium_label"
+                            android:layout_marginTop="@dimen/amp_gain_value_distance"
+                            android:includeFontPadding="false"
+                            android:text="0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/amp_v_seekbar_height"
+                        android:layout_marginLeft="@dimen/amp_v_seekbar_frame_margin">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5px"
+                            android:gravity="end"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/small_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/amp_v_seekbar_scale1_top"
+                                android:text="+20" />
+
+                            <TextView
+                                style="@style/small_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/amp_v_seekbar_scale1_bottom"
+                                android:text="0" />
+
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/left_seek_bg" />
+
+                            <com.microntek.ampsetup.VerticalSeekBar
+                                android:id="@+id/seekbarInputG"
+                                style="@style/amp_v_seekbar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:max="20"
+                                android:progress="0"
+                                android:secondaryProgress="0" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10px"
+                    android:layout_marginEnd="0px"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="3px"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/amp_v_separator" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10px"
+                    android:layout_marginTop="35px"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/amp_soundmode"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/amp_h_seekbar_progress"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/label_large_size" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/soundeffect_arrowhead_left"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent" />
+
+                            <Button
+                                android:id="@+id/soundeffect_arrowhead_right"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/small_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="27px"
+                        android:text="@string/amp_frequency" />
+
+                    <TextView
+                        style="@style/small_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="34px"
+                        android:text="@string/amp_qfactor" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="125px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/large_label"
+                    android:text="@string/amp_bass" />
+
+                <TextView
+                    android:id="@+id/bassG_value"
+                    style="@style/medium_label"
+                    android:layout_marginTop="@dimen/amp_gain_value_distance"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/amp_v_seekbar_height"
+                android:layout_marginRight="@dimen/amp_v_seekbar_frame_margin">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5px"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/small_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/amp_v_seekbar_scale2_top"
+                        android:text="+20" />
+
+                    <TextView
+                        style="@style/small_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/amp_v_seekbar_scale2_middle"
+                        android:text="0" />
+
+                    <TextView
+                        style="@style/small_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/amp_v_seekbar_scale2_bottom"
+                        android:text="-20" />
+
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/left_seek_bg" />
+
+                    <com.microntek.ampsetup.VerticalSeekBar
+                        android:id="@+id/seekbarBassG"
+                        style="@style/amp_v_seekbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:max="40"
+                        android:progress="0"
+                        android:secondaryProgress="0" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/amp_h_seekbar_scale_padding_left"
+                android:paddingTop="@dimen/amp_h_seekbar_scale_padding_top"
+                android:paddingRight="@dimen/amp_h_seekbar_scale_padding_left">
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="60" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="80" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="100" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="120" />
+            </LinearLayout>
+
+            <com.microntek.ampsetup.HorizontalSeekBar
+                android:id="@+id/seekbarBassF"
+                style="@style/amp_h_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/amp_h_seekbar_scale_padding_left"
+                android:paddingTop="@dimen/amp_h_seekbar_scale_padding_top"
+                android:paddingRight="@dimen/amp_h_seekbar_scale_padding_left">
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="0.5" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="1.0" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="1.5" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="2.0" />
+            </LinearLayout>
+
+            <com.microntek.ampsetup.HorizontalSeekBar
+                android:id="@+id/seekbarBassQ"
+                style="@style/amp_h_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="125px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/large_label"
+                    android:text="@string/amp_middle" />
+
+                <TextView
+                    android:id="@+id/middleG_value"
+                    style="@style/medium_label"
+                    android:layout_marginTop="@dimen/amp_gain_value_distance"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/amp_v_seekbar_height"
+                android:layout_marginRight="@dimen/amp_v_seekbar_frame_margin">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5px"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/small_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/amp_v_seekbar_scale2_top"
+                        android:text="+20" />
+
+                    <TextView
+                        style="@style/small_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/amp_v_seekbar_scale2_middle"
+                        android:text="0" />
+
+                    <TextView
+                        style="@style/small_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/amp_v_seekbar_scale2_bottom"
+                        android:text="-20" />
+
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/left_seek_bg" />
+
+                    <com.microntek.ampsetup.VerticalSeekBar
+                        android:id="@+id/seekbarMiddleG"
+                        style="@style/amp_v_seekbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:max="40"
+                        android:progress="0"
+                        android:secondaryProgress="0" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/amp_h_seekbar_scale_padding_left"
+                android:paddingTop="@dimen/amp_h_seekbar_scale_padding_top"
+                android:paddingRight="@dimen/amp_h_seekbar_scale_padding_left">
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="0k5" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="1k0" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="1k5" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="2k0" />
+            </LinearLayout>
+
+            <com.microntek.ampsetup.HorizontalSeekBar
+                android:id="@+id/seekbarMiddleF"
+                style="@style/amp_h_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/amp_h_seekbar_scale_padding_left"
+                android:paddingTop="@dimen/amp_h_seekbar_scale_padding_top"
+                android:paddingRight="@dimen/amp_h_seekbar_scale_padding_left">
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="0.75" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="1.0" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="1.25" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="1.5" />
+            </LinearLayout>
+
+            <com.microntek.ampsetup.HorizontalSeekBar
+                android:id="@+id/seekbarMiddleQ"
+                style="@style/amp_h_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="125px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/large_label"
+                    android:text="@string/amp_treble" />
+
+                <TextView
+                    android:id="@+id/trebleG_value"
+                    style="@style/medium_label"
+                    android:layout_marginTop="@dimen/amp_gain_value_distance"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/amp_v_seekbar_height"
+                android:layout_marginRight="@dimen/amp_v_seekbar_frame_margin">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5px"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/small_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/amp_v_seekbar_scale2_top"
+                        android:text="+20" />
+
+                    <TextView
+                        style="@style/small_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/amp_v_seekbar_scale2_middle"
+                        android:text="0" />
+
+                    <TextView
+                        style="@style/small_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/amp_v_seekbar_scale2_bottom"
+                        android:text="-20" />
+
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left_seek_bg" />
+
+                    <com.microntek.ampsetup.VerticalSeekBar
+                        android:id="@+id/seekbarTrebleG"
+                        style="@style/amp_v_seekbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:max="40"
+                        android:progress="0"
+                        android:secondaryProgress="0" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/amp_h_seekbar_scale_padding_left"
+                android:paddingTop="@dimen/amp_h_seekbar_scale_padding_top"
+                android:paddingRight="@dimen/amp_h_seekbar_scale_padding_left">
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="7k5" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="10k" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="12k5" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="15k" />
+            </LinearLayout>
+
+            <com.microntek.ampsetup.HorizontalSeekBar
+                android:id="@+id/seekbarTrebleF"
+                style="@style/amp_h_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/amp_h_seekbar_scale_padding_left"
+                android:paddingTop="@dimen/amp_h_seekbar_scale_padding_top"
+                android:paddingRight="@dimen/amp_h_seekbar_scale_padding_left">
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="0.75" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="1.25" />
+
+            </LinearLayout>
+
+            <com.microntek.ampsetup.HorizontalSeekBar
+                android:id="@+id/seekbarTrebleQ"
+                style="@style/amp_h_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="1"
+                android:paddingStart="40px"
+                android:paddingEnd="40px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="3px"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2px"
+                android:layout_marginEnd="2px"
+                android:background="@drawable/amp_v_separator" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="110px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/large_label"
+                    android:text="@string/amp_loudness" />
+
+                <TextView
+                    android:id="@+id/loudnessG_value"
+                    style="@style/medium_label"
+                    android:layout_marginTop="@dimen/amp_gain_value_distance"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/amp_v_seekbar_height"
+                android:layout_marginRight="@dimen/amp_v_seekbar_frame_margin">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5px"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/small_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/amp_v_seekbar_scale1_top"
+                        android:text="+20" />
+
+                    <TextView
+                        style="@style/small_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/amp_v_seekbar_scale1_bottom"
+                        android:text="0" />
+
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left_seek_bg" />
+
+                    <com.microntek.ampsetup.VerticalSeekBar
+                        android:id="@+id/seekbarLoudnessG"
+                        style="@style/amp_v_seekbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:max="20"
+                        android:progress="0"
+                        android:secondaryProgress="0" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/amp_h_seekbar_scale_padding_left"
+                android:paddingTop="@dimen/amp_h_seekbar_scale_padding_top"
+                android:paddingRight="@dimen/amp_h_seekbar_scale_padding_left">
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="250" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="400" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="800" />
+
+            </LinearLayout>
+
+            <com.microntek.ampsetup.HorizontalSeekBar
+                android:id="@+id/seekbarLoudnessF"
+                style="@style/amp_h_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/amp_h_seekbar_scale_padding_left"
+                android:paddingTop="@dimen/amp_h_seekbar_scale_padding_top"
+                android:paddingRight="@dimen/amp_h_seekbar_scale_padding_left">
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="1" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="2" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="3" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="4" />
+
+            </LinearLayout>
+
+            <com.microntek.ampsetup.HorizontalSeekBar
+                android:id="@+id/seekbarLoudnessH"
+                style="@style/amp_h_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="3px"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2px"
+                android:layout_marginEnd="2px"
+                android:background="@drawable/amp_v_separator" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/large_label"
+                    android:text="@string/amp_sub" />
+
+                <TextView
+                    android:id="@+id/subG_value"
+                    style="@style/medium_label"
+                    android:layout_marginTop="@dimen/amp_gain_value_distance"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/amp_v_seekbar_height"
+                android:layout_marginRight="@dimen/amp_v_seekbar_frame_margin">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5px"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/small_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/amp_v_seekbar_scale1_top"
+                        android:text="+15" />
+
+                    <TextView
+                        style="@style/small_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/amp_v_seekbar_scale1_bottom"
+                        android:text="-79" />
+
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left_seek_bg" />
+
+                    <com.microntek.ampsetup.VerticalSeekBar
+                        android:id="@+id/seekbarSubG"
+                        style="@style/amp_v_seekbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:max="94"
+                        android:progress="0"
+                        android:secondaryProgress="0" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/amp_h_seekbar_scale_padding_left"
+                android:paddingTop="@dimen/amp_h_seekbar_scale_padding_top"
+                android:paddingRight="@dimen/amp_h_seekbar_scale_padding_left">
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="Off" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="55" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="85" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="120" />
+
+                <TextView
+                    style="@style/small_label"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:text="160" />
+            </LinearLayout>
+
+            <com.microntek.ampsetup.HorizontalSeekBar
+                android:id="@+id/seekbarSubCutOff"
+                style="@style/amp_h_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|top"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/amp_h_seekbar_scale_padding_left"
+                        android:paddingTop="@dimen/amp_h_seekbar_scale_padding_top">
+
+                        <TextView
+                            style="@style/small_label"
+                            android:layout_width="0px"
+                            android:layout_marginLeft="-6px"
+                            android:layout_weight="1"
+                            android:text="0" />
+
+                        <TextView
+                            style="@style/small_label"
+                            android:layout_width="0px"
+                            android:layout_weight="1"
+                            android:text="180" />
+                    </LinearLayout>
+
+                    <com.microntek.ampsetup.HorizontalSeekBar
+                        android:id="@+id/seekBarSubPhase"
+                        style="@style/amp_h_seekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="1"
+                        android:paddingEnd="12px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/amp_h_seekbar_scale_padding_top">
+
+                        <TextView
+                            style="@style/small_label"
+                            android:layout_width="0px"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="LPF" />
+
+
+                        <TextView
+                            style="@style/small_label"
+                            android:layout_width="0px"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingEnd="4px"
+                            android:text="Rear" />
+                    </LinearLayout>
+
+                    <com.microntek.ampsetup.HorizontalSeekBar
+                        android:id="@+id/seekbarSubOut"
+                        style="@style/amp_h_seekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="2"
+                        android:paddingStart="5px" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/small_label"
+                            android:layout_width="0px"
+                            android:layout_marginEnd="14px"
+                            android:layout_weight="1"
+                            android:text="Front" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="130px"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="187px"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/loudness_text"
+                style="@style/large_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amp_loudness" />
+
+            <CheckBox
+                android:id="@+id/loudness_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/dsp_checkbox2" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/bttn_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_marginTop="10px"
+            android:text="Reset"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</FrameLayout>

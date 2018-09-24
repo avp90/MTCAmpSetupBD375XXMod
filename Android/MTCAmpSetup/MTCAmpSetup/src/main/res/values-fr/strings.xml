@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">réglages de l\'ampli</string>
+    <string name="amp_sound">Acoustique</string>
+    <string name="amp_balance">Voix</string>
+    <string name="amp_sound_mode1">Tous</string>
+    <string name="amp_sound_mode2">Conduite</string>
+    <string name="amp_sound_mode3">Le copilote</string>
+    <string name="amp_sound_mode4">Arrière</string>
+    <string name="amp_sound_mode5">Utilisateur</string>
+    <string name="amp_sound_mode6">co-pilote</string>
+    <string name="amp_sound_mode7">Arrière gauche</string>
+    <string name="amp_sound_mode8">Arrière droit</string>
+    <string name="loudness">intensité</string>
+    <string name="music_style0">Utilisateur</string>
+    <string name="music_style1">Rock</string>
+    <string name="music_style2">Populaire</string>
+    <string name="music_style3">Monsieur</string>
+    <string name="music_style4">Classique</string>
+    <string name="music_style5">Droit</string>
+    <string name="music_style6">Vocal</string>
+    <string name="custom_1">personnalisé 1</string>
+    <string name="custom_2">personnalisé 2</string>
+    <string name="custom_3">personnalisé 3</string>
+    <string name="sound_common">ordinaire</string>
+    <string name="sound_specialty">spécialité</string>
+    <string name="delay">retard</string>
+    <string name="volume">gain</string>
+    <string name="trumpet_h_distance">latéral</string>
+    <string name="trumpet_v_distance">vertical</string>
+    <string name="speaker_distance_setting">Haut-parleurs de voiture de réglage de la distance</string>
+    <string name="affirm">confirmer</string>
+</resources>

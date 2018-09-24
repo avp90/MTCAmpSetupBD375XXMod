@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="AmpTheme" parent="@android:style/Theme.Holo.NoActionBar">
+    <item name="android:splitMotionEvents">false</item>
+    <item name="android:windowEnableSplitTouch">false</item>
+</style>
+<style name="Translucent_NoTitle" parent="@android:style/Theme.Dialog">
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowFrame">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:backgroundDimEnabled">false</item>
+    <item name="android:colorBackgroundCacheHint">@null</item>
+</style>
+    <style name="label">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="small_label" parent="label">
+        <item name="android:textSize">@dimen/label_small_size</item>
+    </style>
+    <style name="medium_label" parent="label">
+        <item name="android:textSize">@dimen/label_medium_size</item>
+    </style>
+    <style name="large_label" parent="label">
+        <item name="android:textSize">@dimen/label_large_size</item>
+    </style>
+    <style name="amp_v_seekbar">
+        <item name="android:progressDrawable">@drawable/amp_v_seekbar_progress</item>
+        <item name="android:thumb">@drawable/eq_left_thumb</item>
+        <item name="android:minHeight">@dimen/amp_v_seekbar_minHeight</item>
+        <item name="android:maxHeight">@dimen/amp_v_seekbar_minHeight</item>
+        <item name="android:thumbOffset">21px</item>
+        <item name="android:paddingLeft">0px</item>
+        <item name="android:paddingRight">0px</item>
+        <item name="android:paddingTop">0px</item>
+        <item name="android:paddingBottom">0px</item>
+        <item name="android:paddingStart">16px</item>
+        <item name="android:paddingEnd">16px</item>
+    </style>
+    <style name="amp_h_seekbar">
+        <item name="android:progressDrawable">@drawable/amp_h_seekbar_progress</item>
+        <item name="android:thumb">@drawable/amp_h_seekbar_thumb</item>
+        <item name="android:minHeight">@dimen/amp_h_seekbar_minHeight</item>
+        <item name="android:maxHeight">@dimen/amp_h_seekbar_minHeight</item>
+        <item name="android:thumbOffset">0px</item>
+        <item name="android:paddingLeft">0px</item>
+        <item name="android:paddingRight">0px</item>
+        <item name="android:paddingTop">0px</item>
+        <item name="android:paddingBottom">0px</item>
+    </style>
+</resources>
+

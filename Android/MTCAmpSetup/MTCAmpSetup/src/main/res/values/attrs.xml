@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AmpBalance">
+        <attr name="imgHSrc" format="reference"/>
+        <attr name="imgVSrc" format="reference"/>
+        <attr name="imgDSrc" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="MyButton">
+        <attr name="imgWidth" format="dimension" />
+        <attr name="imgHeight" format="dimension" />
+        <attr name="imgSrc" format="reference" />
+        <attr name="imgSrc1" format="reference" />
+        <attr name="imgSrc2" format="reference" />
+        <attr name="imgWidth2" format="dimension" />
+        <attr name="imgHeight2" format="dimension" />
+    </declare-styleable>
+</resources>

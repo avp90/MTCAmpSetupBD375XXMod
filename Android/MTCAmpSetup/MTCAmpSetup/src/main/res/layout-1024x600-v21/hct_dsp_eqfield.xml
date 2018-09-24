@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mtc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:orientation="horizontal"
+    android:paddingRight="12px">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="ltr"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="405px"
+            android:background="@drawable/dsp_eq_left_bg"
+            android:layoutDirection="ltr"
+            android:paddingLeft="13px"
+            android:paddingRight="13px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="38px"
+                    android:layout_height="282px"
+                    android:layout_gravity="center_vertical"
+                    android:layoutDirection="ltr">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/sound_treble"
+                        android:textColor="@android:color/white"
+                        android:textSize="18px" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="@string/sound_mediant"
+                        android:textColor="@android:color/white"
+                        android:textSize="18px" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:text="@string/sound_bass"
+                        android:textColor="@android:color/white"
+                        android:textSize="18px" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="0px"
+                    android:layout_height="346px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="27px"
+                        android:layout_height="265px"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left_seek_bg" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:text="@string/frequency_1"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+
+                    <com.microntek.ampsetup.VerticalSeekBar
+                        android:id="@+id/sound_progress1"
+                        android:layout_width="match_parent"
+                        android:layout_height="304px"
+                        android:layout_gravity="center"
+                        android:max="20"
+                        android:paddingLeft="20px"
+                        android:paddingRight="20px"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/dsp_left_seekbar"
+                        android:secondaryProgress="0"
+                        android:splitTrack="false"
+                        android:thumb="@drawable/eq_left_thumb"
+                        android:thumbOffset="20px" />
+
+                    <TextView
+                        android:id="@+id/sound_progress1_vaule"
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0px"
+                    android:layout_height="346px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="27px"
+                        android:layout_height="265px"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left_seek_bg" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:text="@string/frequency_2"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+
+                    <com.microntek.ampsetup.VerticalSeekBar
+                        android:id="@+id/sound_progress2"
+                        android:layout_width="match_parent"
+                        android:layout_height="304px"
+                        android:layout_gravity="center"
+                        android:max="20"
+                        android:paddingLeft="20px"
+                        android:paddingRight="20px"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/dsp_left_seekbar"
+                        android:secondaryProgress="0"
+                        android:splitTrack="false"
+                        android:thumb="@drawable/eq_left_thumb"
+                        android:thumbOffset="20px" />
+
+                    <TextView
+                        android:id="@+id/sound_progress2_vaule"
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0px"
+                    android:layout_height="346px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="27px"
+                        android:layout_height="265px"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left_seek_bg" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:text="@string/frequency_3"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+
+                    <com.microntek.ampsetup.VerticalSeekBar
+                        android:id="@+id/sound_progress3"
+                        android:layout_width="match_parent"
+                        android:layout_height="304px"
+                        android:layout_gravity="center"
+                        android:max="20"
+                        android:paddingLeft="20px"
+                        android:paddingRight="20px"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/dsp_left_seekbar"
+                        android:secondaryProgress="0"
+                        android:splitTrack="false"
+                        android:thumb="@drawable/eq_left_thumb"
+                        android:thumbOffset="20px" />
+
+                    <TextView
+                        android:id="@+id/sound_progress3_vaule"
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0px"
+                    android:layout_height="346px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="27px"
+                        android:layout_height="265px"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left_seek_bg" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:text="@string/frequency_4"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+
+                    <com.microntek.ampsetup.VerticalSeekBar
+                        android:id="@+id/sound_progress4"
+                        android:layout_width="match_parent"
+                        android:layout_height="304px"
+                        android:layout_gravity="center"
+                        android:max="20"
+                        android:paddingLeft="20px"
+                        android:paddingRight="20px"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/dsp_left_seekbar"
+                        android:secondaryProgress="0"
+                        android:splitTrack="false"
+                        android:thumb="@drawable/eq_left_thumb"
+                        android:thumbOffset="20px" />
+
+                    <TextView
+                        android:id="@+id/sound_progress4_vaule"
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0px"
+                    android:layout_height="346px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="27px"
+                        android:layout_height="265px"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left_seek_bg" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:text="@string/frequency_5"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+
+                    <com.microntek.ampsetup.VerticalSeekBar
+                        android:id="@+id/sound_progress5"
+                        android:layout_width="match_parent"
+                        android:layout_height="304px"
+                        android:layout_gravity="center"
+                        android:max="20"
+                        android:paddingLeft="20px"
+                        android:paddingRight="20px"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/dsp_left_seekbar"
+                        android:secondaryProgress="0"
+                        android:splitTrack="false"
+                        android:thumb="@drawable/eq_left_thumb"
+                        android:thumbOffset="20px" />
+
+                    <TextView
+                        android:id="@+id/sound_progress5_vaule"
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0px"
+                    android:layout_height="346px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="27px"
+                        android:layout_height="265px"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left_seek_bg" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:text="@string/frequency_6"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+
+                    <com.microntek.ampsetup.VerticalSeekBar
+                        android:id="@+id/sound_progress6"
+                        android:layout_width="match_parent"
+                        android:layout_height="304px"
+                        android:layout_gravity="center"
+                        android:max="20"
+                        android:paddingLeft="20px"
+                        android:paddingRight="20px"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/dsp_left_seekbar"
+                        android:secondaryProgress="0"
+                        android:splitTrack="false"
+                        android:thumb="@drawable/eq_left_thumb"
+                        android:thumbOffset="20px" />
+
+                    <TextView
+                        android:id="@+id/sound_progress6_vaule"
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0px"
+                    android:layout_height="346px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="27px"
+                        android:layout_height="265px"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left_seek_bg" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:text="@string/frequency_7"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+
+                    <com.microntek.ampsetup.VerticalSeekBar
+                        android:id="@+id/sound_progress7"
+                        android:layout_width="match_parent"
+                        android:layout_height="304px"
+                        android:layout_gravity="center"
+                        android:max="20"
+                        android:paddingLeft="20px"
+                        android:paddingRight="20px"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/dsp_left_seekbar"
+                        android:secondaryProgress="0"
+                        android:splitTrack="false"
+                        android:thumb="@drawable/eq_left_thumb"
+                        android:thumbOffset="20px" />
+
+                    <TextView
+                        android:id="@+id/sound_progress7_vaule"
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0px"
+                    android:layout_height="346px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="27px"
+                        android:layout_height="265px"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left_seek_bg" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:text="@string/frequency_8"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+
+                    <com.microntek.ampsetup.VerticalSeekBar
+                        android:id="@+id/sound_progress8"
+                        android:layout_width="match_parent"
+                        android:layout_height="304px"
+                        android:layout_gravity="center"
+                        android:max="20"
+                        android:paddingLeft="20px"
+                        android:paddingRight="20px"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/dsp_left_seekbar"
+                        android:secondaryProgress="0"
+                        android:splitTrack="false"
+                        android:thumb="@drawable/eq_left_thumb"
+                        android:thumbOffset="20px" />
+
+                    <TextView
+                        android:id="@+id/sound_progress8_vaule"
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0px"
+                    android:layout_height="346px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="27px"
+                        android:layout_height="265px"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left_seek_bg" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:text="@string/frequency_9"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+
+                    <com.microntek.ampsetup.VerticalSeekBar
+                        android:id="@+id/sound_progress9"
+                        android:layout_width="match_parent"
+                        android:layout_height="304px"
+                        android:layout_gravity="center"
+                        android:max="20"
+                        android:paddingLeft="20px"
+                        android:paddingRight="20px"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/dsp_left_seekbar"
+                        android:secondaryProgress="0"
+                        android:splitTrack="false"
+                        android:thumb="@drawable/eq_left_thumb"
+                        android:thumbOffset="20px" />
+
+                    <TextView
+                        android:id="@+id/sound_progress9_vaule"
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0px"
+                    android:layout_height="346px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="27px"
+                        android:layout_height="265px"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left_seek_bg" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:text="@string/frequency_10"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+
+                    <com.microntek.ampsetup.VerticalSeekBar
+                        android:id="@+id/sound_progress10"
+                        android:layout_width="match_parent"
+                        android:layout_height="304px"
+                        android:layout_gravity="center"
+                        android:max="20"
+                        android:paddingLeft="20px"
+                        android:paddingRight="20px"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/dsp_left_seekbar"
+                        android:secondaryProgress="0"
+                        android:splitTrack="false"
+                        android:thumb="@drawable/eq_left_thumb"
+                        android:thumbOffset="20px" />
+
+                    <TextView
+                        android:id="@+id/sound_progress10_vaule"
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0px"
+                    android:layout_height="346px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="27px"
+                        android:layout_height="265px"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left_seek_bg" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:text="@string/frequency_11"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+
+                    <com.microntek.ampsetup.VerticalSeekBar
+                        android:id="@+id/sound_progress11"
+                        android:layout_width="match_parent"
+                        android:layout_height="304px"
+                        android:layout_gravity="center"
+                        android:max="20"
+                        android:paddingLeft="20px"
+                        android:paddingRight="20px"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/dsp_left_seekbar"
+                        android:secondaryProgress="0"
+                        android:splitTrack="false"
+                        android:thumb="@drawable/eq_left_thumb"
+                        android:thumbOffset="20px" />
+
+                    <TextView
+                        android:id="@+id/sound_progress11_vaule"
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0px"
+                    android:layout_height="346px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="27px"
+                        android:layout_height="265px"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left_seek_bg" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:text="@string/frequency_12"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+
+                    <com.microntek.ampsetup.VerticalSeekBar
+                        android:id="@+id/sound_progress12"
+                        android:layout_width="match_parent"
+                        android:layout_height="304px"
+                        android:layout_gravity="center"
+                        android:max="20"
+                        android:paddingLeft="20px"
+                        android:paddingRight="20px"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/dsp_left_seekbar"
+                        android:secondaryProgress="0"
+                        android:splitTrack="false"
+                        android:thumb="@drawable/eq_left_thumb"
+                        android:thumbOffset="20px" />
+
+                    <TextView
+                        android:id="@+id/sound_progress12_vaule"
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0px"
+                    android:layout_height="346px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="27px"
+                        android:layout_height="265px"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left_seek_bg" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:text="@string/frequency_13"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+
+                    <com.microntek.ampsetup.VerticalSeekBar
+                        android:id="@+id/sound_progress13"
+                        android:layout_width="match_parent"
+                        android:layout_height="304px"
+                        android:layout_gravity="center"
+                        android:max="20"
+                        android:paddingLeft="20px"
+                        android:paddingRight="20px"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/dsp_left_seekbar"
+                        android:secondaryProgress="0"
+                        android:splitTrack="false"
+                        android:thumb="@drawable/eq_left_thumb"
+                        android:thumbOffset="20px" />
+
+                    <TextView
+                        android:id="@+id/sound_progress13_vaule"
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0px"
+                    android:layout_height="346px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="27px"
+                        android:layout_height="265px"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left_seek_bg" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:text="@string/frequency_14"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+
+                    <com.microntek.ampsetup.VerticalSeekBar
+                        android:id="@+id/sound_progress14"
+                        android:layout_width="match_parent"
+                        android:layout_height="304px"
+                        android:layout_gravity="center"
+                        android:max="20"
+                        android:paddingLeft="20px"
+                        android:paddingRight="20px"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/dsp_left_seekbar"
+                        android:secondaryProgress="0"
+                        android:splitTrack="false"
+                        android:thumb="@drawable/eq_left_thumb"
+                        android:thumbOffset="20px" />
+
+                    <TextView
+                        android:id="@+id/sound_progress14_vaule"
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0px"
+                    android:layout_height="346px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="27px"
+                        android:layout_height="265px"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left_seek_bg" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:text="@string/frequency_15"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+
+                    <com.microntek.ampsetup.VerticalSeekBar
+                        android:id="@+id/sound_progress15"
+                        android:layout_width="match_parent"
+                        android:layout_height="304px"
+                        android:layout_gravity="center"
+                        android:max="20"
+                        android:paddingLeft="20px"
+                        android:paddingRight="20px"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/dsp_left_seekbar"
+                        android:secondaryProgress="0"
+                        android:splitTrack="false"
+                        android:thumb="@drawable/eq_left_thumb"
+                        android:thumbOffset="20px" />
+
+                    <TextView
+                        android:id="@+id/sound_progress15_vaule"
+                        android:layout_width="match_parent"
+                        android:layout_height="21px"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:textColor="@color/white"
+                        android:textSize="18px" />
+                </FrameLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            android:paddingTop="27px">
+
+            <ImageButton
+                android:id="@+id/soundeffect_arrowhead_left"
+                android:layout_width="58px"
+                android:layout_height="50px"
+                android:layout_marginLeft="30px"
+                android:background="@android:color/transparent"
+                android:src="@drawable/dsp_bleft" />
+
+            <TextView
+                android:id="@+id/amp_soundmode"
+                android:layout_width="180px"
+                android:layout_height="50px"
+                android:layout_marginLeft="4px"
+                android:layout_marginRight="4px"
+                android:background="@drawable/dsp_sound_bg"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="25px" />
+
+            <ImageButton
+                android:id="@+id/soundeffect_arrowhead_right"
+                android:layout_width="58px"
+                android:layout_height="50px"
+                android:background="@android:color/transparent"
+                android:src="@drawable/dsp_bright" />
+
+            <ImageView
+                android:id="@+id/eq_reset"
+                android:layout_width="130px"
+                android:layout_height="72px"
+                android:layout_marginLeft="60px"
+                android:src="@drawable/btn_reset" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70px"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="3px"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/eq_custom1"
+                    android:layout_width="94px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/custom_btn"
+                    android:maxLines="1"
+                    android:paddingBottom="22px"
+                    android:text="@string/custom_1"
+                    android:textColor="@drawable/custontextcolor"
+                    android:textSize="18px" />
+
+                <View
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/eq_custom2"
+                    android:layout_width="94px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/custom_btn"
+                    android:maxLines="1"
+                    android:paddingBottom="22px"
+                    android:text="@string/custom_2"
+                    android:textColor="@drawable/custontextcolor"
+                    android:textSize="18px" />
+
+                <View
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/eq_custom3"
+                    android:layout_width="94px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/custom_btn"
+                    android:maxLines="1"
+                    android:paddingBottom="22px"
+                    android:text="@string/custom_3"
+                    android:textColor="@drawable/custontextcolor"
+                    android:textSize="18px" />
+
+                <View
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

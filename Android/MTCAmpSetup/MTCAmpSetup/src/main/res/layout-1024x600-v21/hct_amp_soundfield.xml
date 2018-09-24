@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mtc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="@dimen/left_panel_width"
+        android:layout_height="@dimen/left_panel_height" />
+
+    <FrameLayout
+        android:layout_width="487px"
+        android:layout_height="match_parent"
+        android:layoutDirection="ltr">
+
+        <ImageView
+            android:layout_width="266px"
+            android:layout_height="470px"
+            android:layout_gravity="center"
+            android:src="@drawable/amp_sound_car" />
+
+        <com.microntek.ampsetup.AmpBalance
+            android:id="@+id/balanceCross"
+            android:layout_width="187px"
+            android:layout_height="205px"
+            android:layout_gravity="center"
+            android:layout_marginTop="37px"
+            mtc:imgDSrc="@drawable/amp_line_dot"
+            mtc:imgHSrc="@drawable/amp_horizontalline"
+            mtc:imgVSrc="@drawable/amp_verticalline" />
+
+        <ImageButton
+            android:id="@+id/btn_amp_left"
+            android:layout_width="72px"
+            android:layout_height="72px"
+            android:layout_gravity="left|center_vertical|center_horizontal|center"
+            android:layout_marginStart="56px"
+            android:layout_marginTop="37px"
+            android:background="@drawable/amp_b_bg"
+            android:onClick="keyBalance"
+            android:src="@drawable/amp_b_left" />
+
+        <ImageButton
+            android:id="@+id/btn_amp_right"
+            android:layout_width="72px"
+            android:layout_height="72px"
+            android:layout_gravity="right|center_vertical|center_horizontal|center"
+            android:layout_marginTop="37px"
+            android:layout_marginEnd="56px"
+            android:background="@drawable/amp_b_bg"
+            android:onClick="keyBalance"
+            android:src="@drawable/amp_b_right" />
+
+        <ImageButton
+            android:id="@+id/btn_amp_front"
+            android:layout_width="72px"
+            android:layout_height="72px"
+            android:layout_gravity="top|center_vertical|center_horizontal|center"
+            android:layout_marginTop="105px"
+            android:background="@drawable/amp_b_bg"
+            android:onClick="keyBalance"
+            android:src="@drawable/amp_b_up" />
+
+        <ImageButton
+            android:id="@+id/btn_amp_back"
+            android:layout_width="72px"
+            android:layout_height="72px"
+            android:layout_gravity="bottom|center_vertical|center_horizontal|center"
+            android:layout_marginBottom="45px"
+            android:background="@drawable/amp_b_bg"
+            android:onClick="keyBalance"
+            android:src="@drawable/amp_b_down" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="161px"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layoutDirection="ltr"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/amp_banlance2"
+            android:layout_width="match_parent"
+            android:layout_height="63px"
+            android:layout_marginTop="37px"
+            android:background="@drawable/amp_b_mode"
+            android:gravity="center"
+            android:onClick="keyBalance"
+            android:singleLine="true"
+            android:text="@string/amp_sound_mode2"
+            android:textColor="@drawable/amptextcolor" />
+
+        <Button
+            android:id="@+id/amp_banlance3"
+            android:layout_width="match_parent"
+            android:layout_height="63px"
+            android:layout_marginTop="37px"
+            android:background="@drawable/amp_b_mode"
+            android:gravity="center"
+            android:onClick="keyBalance"
+            android:singleLine="true"
+            android:text="@string/amp_sound_mode3"
+            android:textColor="@drawable/amptextcolor" />
+
+        <Button
+            android:id="@+id/amp_banlance4"
+            android:layout_width="match_parent"
+            android:layout_height="63px"
+            android:layout_marginTop="37px"
+            android:background="@drawable/amp_b_mode"
+            android:gravity="center"
+            android:onClick="keyBalance"
+            android:singleLine="true"
+            android:text="@string/amp_sound_mode4"
+            android:textColor="@drawable/amptextcolor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="161px"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30px"
+        android:gravity="center"
+        android:layoutDirection="ltr"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/amp_banlance5"
+            android:layout_width="match_parent"
+            android:layout_height="63px"
+            android:layout_marginTop="37px"
+            android:background="@drawable/amp_b_mode"
+            android:gravity="center"
+            android:onClick="keyBalance"
+            android:singleLine="true"
+            android:text="@string/amp_sound_mode1"
+            android:textColor="@drawable/amptextcolor" />
+
+        <Button
+            android:id="@+id/amp_banlance1"
+            android:layout_width="match_parent"
+            android:layout_height="63px"
+            android:layout_marginTop="37px"
+            android:background="@drawable/amp_b_mode"
+            android:gravity="center"
+            android:onClick="keyBalance"
+            android:singleLine="true"
+            android:text="@string/amp_sound_mode5"
+            android:textColor="@drawable/amptextcolor" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:mtc="http://schemas.android.com/apk/res-auto" android:background="@drawable/dsp_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20px" android:layoutDirection="ltr">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/dsp_left_bg" android:layout_width="102px" android:layout_height="485px" android:layoutDirection="ltr">
+            <View android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+            <ImageView android:id="@+id/amp_blance_button" android:background="@drawable/left_bt_bg" android:layout_width="match_parent" android:layout_height="99px" android:src="@drawable/dsp_balance_nor"/>
+            <View android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+            <ImageView android:id="@+id/amp_effect_button" android:background="@drawable/left_bt_bg" android:layout_width="match_parent" android:layout_height="99px" android:src="@drawable/dsp_effect_nor"/>
+            <View android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+            <ImageView android:id="@+id/amp_sound_button" android:background="@drawable/left_bt_bg" android:layout_width="match_parent" android:layout_height="99px" android:src="@drawable/dsp_sound_nor"/>
+            <View android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+        </LinearLayout>
+        <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_marginLeft="6px" android:layout_weight="1" android:layoutDirection="ltr">
+            <include android:id="@+id/dsp_eq_layout" android:visibility="gone" layout="@layout/hct_dsp_eqfield"/>
+            <include android:id="@+id/dsp_effect_layout" android:visibility="gone" layout="@layout/hct_dsp_effield"/>
+            <include android:id="@+id/dsp_sound_layout" android:visibility="gone" layout="@layout/hct_dsp_soundfield"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

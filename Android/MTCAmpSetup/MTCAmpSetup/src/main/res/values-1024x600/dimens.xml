@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="distance_width">510px</dimen>
+    <dimen name="distance_height">380px</dimen>
+
+    <dimen name="label_large_size">22px</dimen>
+    <dimen name="label_medium_size">16px</dimen>
+    <dimen name="label_small_size">12px</dimen>
+
+    <dimen name="left_panel_width">98px</dimen>
+    <dimen name="left_panel_height">370px</dimen>
+
+    <dimen name="amp_gain_value_distance">10px</dimen>
+    <dimen name="amp_v_seekbar_height">325px</dimen>
+    <dimen name="amp_v_seekbar_minHeight">8px</dimen>
+    <dimen name="amp_v_seekbar_frame_margin">13px</dimen>
+    <dimen name="amp_v_seekbar_scale1_top">8px</dimen>
+    <dimen name="amp_v_seekbar_scale1_bottom">280px</dimen>
+    <dimen name="amp_v_seekbar_scale2_top">8px</dimen>
+    <dimen name="amp_v_seekbar_scale2_middle">133px</dimen>
+    <dimen name="amp_v_seekbar_scale2_bottom">133px</dimen>
+
+    <dimen name="amp_h_seekbar_scale_padding_top">10px</dimen>
+    <dimen name="amp_h_seekbar_scale_padding_left">6px</dimen>
+    <dimen name="amp_h_seekbar_minHeight">30px</dimen>
+</resources>

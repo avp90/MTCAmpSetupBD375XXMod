@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dsp_bg">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10px"
+        android:layout_marginBottom="10px"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/amp_eq_left_panel"
+            android:layout_width="@dimen/left_panel_width"
+            android:layout_height="@dimen/left_panel_height"
+            android:animateLayoutChanges="false"
+            android:background="@drawable/dsp_left_bg"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/amp_blance_button"
+                android:layout_width="match_parent"
+                android:layout_height="99px"
+                android:background="@drawable/left_bt_bg"
+                android:src="@drawable/dsp_balance_nor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/amp_sound_button"
+                android:layout_width="match_parent"
+                android:layout_height="99px"
+                android:background="@drawable/left_bt_bg"
+                android:src="@drawable/dsp_sound_nor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <include
+                android:id="@+id/amp_eq_layout"
+                layout="@layout/hct_amp_eqfield"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/amp_sound_layout"
+                layout="@layout/hct_amp_soundfield"
+                android:visibility="gone" />
+        </FrameLayout>
+
+    </FrameLayout>
+</LinearLayout>

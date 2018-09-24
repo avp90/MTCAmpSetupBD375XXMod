@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:mtc="http://schemas.android.com/apk/res-auto" android:background="@drawable/dsp_soundfield_bg" android:layout_width="886px" android:layout_height="485px" android:layoutDirection="ltr">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/sound_common" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="150px" android:layout_height="193px" android:layout_marginLeft="56px" android:layout_marginTop="206px" android:layoutDirection="ltr">
+            <Button android:textSize="25px" android:textColor="@drawable/custontextcolor" android:id="@+id/amp_banlance5" android:background="@drawable/dsp_b_mode" android:paddingBottom="26px" android:layout_width="match_parent" android:layout_height="83px" android:text="@string/amp_sound_mode1" android:singleLine="true" android:onClick="keyBalance"/>
+            <View android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+            <Button android:textSize="25px" android:textColor="@drawable/custontextcolor" android:id="@+id/amp_banlance1" android:background="@drawable/dsp_b_mode" android:paddingBottom="26px" android:layout_width="match_parent" android:layout_height="83px" android:text="@string/amp_sound_mode5" android:singleLine="true" android:onClick="keyBalance"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="150px" android:layout_height="294px" android:layout_marginLeft="50px" android:layout_marginTop="155px" android:layoutDirection="ltr">
+            <Button android:textSize="25px" android:textColor="@drawable/custontextcolor" android:id="@+id/amp_banlance2" android:background="@drawable/dsp_b_mode" android:paddingBottom="26px" android:layout_width="match_parent" android:layout_height="83px" android:text="@string/amp_sound_mode2" android:singleLine="true" android:onClick="keyBalance"/>
+            <View android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+            <Button android:textSize="25px" android:textColor="@drawable/custontextcolor" android:id="@+id/amp_banlance3" android:background="@drawable/dsp_b_mode" android:paddingBottom="26px" android:layout_width="match_parent" android:layout_height="83px" android:text="@string/amp_sound_mode3" android:singleLine="true" android:onClick="keyBalance"/>
+            <View android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+            <Button android:textSize="25px" android:textColor="@drawable/custontextcolor" android:id="@+id/amp_banlance4" android:background="@drawable/dsp_b_mode" android:paddingBottom="26px" android:layout_width="match_parent" android:layout_height="83px" android:text="@string/amp_sound_mode4" android:singleLine="true" android:onClick="keyBalance"/>
+        </LinearLayout>
+        <FrameLayout android:layout_width="325px" android:layout_height="match_parent" android:layout_marginLeft="75px" android:layoutDirection="ltr">
+            <ImageView android:layout_gravity="center" android:layout_width="256px" android:layout_height="472px" android:src="@drawable/dsp_sound_car"/>
+            <com.microntek.ampsetup.AmpBalance android:layout_gravity="center" android:id="@+id/balanceCross" android:layout_width="211px" android:layout_height="253px" android:layout_marginTop="16px" mtc:imgHSrc="@drawable/dsp_horizontalline" mtc:imgVSrc="@drawable/dsp_verticalline" mtc:imgDSrc="@drawable/dsp_line_dot"/>
+            <Button android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/btn_amp_left" android:background="@drawable/dsp_b_left" android:layout_width="52px" android:layout_height="54px" android:layout_marginTop="16px"/>
+            <Button android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/btn_amp_right" android:background="@drawable/dsp_b_right" android:layout_width="52px" android:layout_height="54px" android:layout_marginTop="16px"/>
+            <Button android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/btn_amp_front" android:background="@drawable/dsp_b_up" android:layout_width="52px" android:layout_height="54px" android:layout_marginLeft="2px" android:layout_marginTop="80px"/>
+            <Button android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/btn_amp_back" android:background="@drawable/dsp_b_down" android:layout_width="52px" android:layout_height="54px" android:layout_marginLeft="2px" android:layout_marginBottom="43px"/>
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:orientation="horizontal" android:id="@+id/sound_specialty" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:background="@drawable/speaker_left_bg" android:layout_width="266px" android:layout_height="54px" android:layout_marginLeft="70px" android:layout_marginTop="171px">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:visibility="visible" android:layout_width="206px" android:layout_height="46px" android:layout_marginLeft="5px">
+                <com.microntek.ampsetup.MyButton android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/left_front_down" android:layout_width="44px" android:layout_height="match_parent" mtc:imgWidth="44px" mtc:imgHeight="46px" mtc:imgSrc="@drawable/dsp_bt_down"/>
+                <TextView android:textSize="25px" android:textColor="@color/white" android:gravity="center" android:id="@+id/left_front_info" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1"/>
+                <com.microntek.ampsetup.MyButton android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/left_front_up" android:layout_width="44px" android:layout_height="match_parent" mtc:imgWidth="44px" mtc:imgHeight="46px" mtc:imgSrc="@drawable/dsp_bt_up"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="right" android:background="@drawable/speaker_left" android:layout_width="44px" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <FrameLayout android:background="@drawable/speaker_left_bg" android:layout_width="266px" android:layout_height="54px" android:layout_marginLeft="70px" android:layout_marginTop="258px">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:visibility="visible" android:layout_width="206px" android:layout_height="46px" android:layout_marginLeft="5px">
+                <com.microntek.ampsetup.MyButton android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/left_back_down" android:layout_width="44px" android:layout_height="match_parent" mtc:imgWidth="44px" mtc:imgHeight="46px" mtc:imgSrc="@drawable/dsp_bt_down"/>
+                <TextView android:textSize="25px" android:textColor="@color/white" android:gravity="center" android:id="@+id/left_back_info" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1"/>
+                <com.microntek.ampsetup.MyButton android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/left_back_up" android:layout_width="44px" android:layout_height="match_parent" mtc:imgWidth="44px" mtc:imgHeight="46px" mtc:imgSrc="@drawable/dsp_bt_up"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="right" android:background="@drawable/speaker_left" android:layout_width="44px" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="right" android:background="@drawable/speaker_left_bg" android:layout_width="266px" android:layout_height="54px" android:layout_marginTop="171px" android:layout_marginRight="70px">
+            <LinearLayout android:layout_gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:visibility="visible" android:layout_width="206px" android:layout_height="46px" android:layout_marginRight="5px">
+                <com.microntek.ampsetup.MyButton android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/right_front_down" android:layout_width="44px" android:layout_height="match_parent" mtc:imgWidth="44px" mtc:imgHeight="46px" mtc:imgSrc="@drawable/dsp_bt_down"/>
+                <TextView android:textSize="25px" android:textColor="@color/white" android:gravity="center" android:id="@+id/right_front_info" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1"/>
+                <com.microntek.ampsetup.MyButton android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/right_front_up" android:layout_width="44px" android:layout_height="match_parent" mtc:imgWidth="44px" mtc:imgHeight="46px" mtc:imgSrc="@drawable/dsp_bt_up"/>
+            </LinearLayout>
+            <ImageView android:background="@drawable/speaker_right" android:layout_width="44px" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="right" android:orientation="horizontal" android:background="@drawable/speaker_left_bg" android:layout_width="266px" android:layout_height="54px" android:layout_marginTop="258px" android:layout_marginRight="70px">
+            <LinearLayout android:layout_gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:visibility="visible" android:layout_width="206px" android:layout_height="46px" android:layout_marginRight="5px">
+                <com.microntek.ampsetup.MyButton android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/right_back_down" android:layout_width="44px" android:layout_height="match_parent" mtc:imgWidth="44px" mtc:imgHeight="46px" mtc:imgSrc="@drawable/dsp_bt_down"/>
+                <TextView android:textSize="25px" android:textColor="@color/white" android:gravity="center" android:id="@+id/right_back_info" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1"/>
+                <com.microntek.ampsetup.MyButton android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/right_back_up" android:layout_width="44px" android:layout_height="match_parent" mtc:imgWidth="44px" mtc:imgHeight="46px" mtc:imgSrc="@drawable/dsp_bt_up"/>
+            </LinearLayout>
+            <ImageView android:background="@drawable/speaker_right" android:layout_width="44px" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="308px" android:layout_height="356px" android:layout_marginTop="116px" android:layoutDirection="ltr">
+            <ImageView android:layout_gravity="center" android:layout_width="179px" android:layout_height="221px" android:src="@drawable/dsp_sound_car1"/>
+            <com.microntek.ampsetup.AmpBalance android:layout_gravity="center" android:id="@+id/s_balanceCross" android:layout_width="211px" android:layout_height="253px" mtc:imgHSrc="@drawable/dsp_horizontalline" mtc:imgVSrc="@drawable/dsp_verticalline" mtc:imgDSrc="@drawable/dsp_line_dot"/>
+            <Button android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/btn_s_left" android:background="@drawable/dsp_b_left" android:layout_width="52px" android:layout_height="54px" android:layout_marginTop="63px"/>
+            <Button android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/btn_s_right" android:background="@drawable/dsp_b_right" android:layout_width="52px" android:layout_height="54px" android:layout_marginTop="63px"/>
+            <Button android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/btn_s_front" android:background="@drawable/dsp_b_up" android:layout_width="52px" android:layout_height="54px" android:layout_marginLeft="2px"/>
+            <Button android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/btn_s_back" android:background="@drawable/dsp_b_down" android:layout_width="52px" android:layout_height="54px" android:layout_marginLeft="2px"/>
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:layout_width="293px" android:layout_height="94px" android:layout_marginTop="23px" android:layout_marginRight="143px">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="42px">
+                <TextView android:textSize="22px" android:textColor="@color/white" android:gravity="center" android:layout_width="163px" android:layout_height="match_parent" android:text="@string/delay" android:maxLines="1"/>
+                <View android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1"/>
+                <CheckBox android:id="@+id/ck_defer" android:background="@drawable/dsp_checkbox2" android:layout_width="116px" android:layout_height="match_parent" android:button="@null"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="42px">
+                <TextView android:textSize="22px" android:textColor="@color/white" android:gravity="center" android:layout_width="163px" android:layout_height="match_parent" android:text="@string/volume" android:maxLines="1"/>
+                <View android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1"/>
+                <CheckBox android:id="@+id/ck_volume" android:background="@drawable/dsp_checkbox2" android:layout_width="116px" android:layout_height="match_parent" android:button="@null"/>
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:layout_gravity="right" android:id="@+id/distance_setting" android:background="@drawable/dsp_distance_setting" android:layout_width="70px" android:layout_height="70px" android:layout_marginTop="20px" android:layout_marginRight="20px"/>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="120px" android:layout_height="136px" android:layout_marginLeft="56px" android:layout_marginBottom="12px">
+            <Button android:textSize="22px" android:textColor="@drawable/custontextcolor" android:id="@+id/s_banlance1" android:background="@drawable/dsp_b_mode1" android:paddingBottom="14px" android:layout_width="120px" android:layout_height="68px" android:text="@string/amp_sound_mode2" android:singleLine="true"/>
+            <Button android:textSize="22px" android:textColor="@drawable/custontextcolor" android:id="@+id/s_banlance4" android:background="@drawable/dsp_b_mode1" android:paddingBottom="14px" android:layout_width="120px" android:layout_height="68px" android:text="@string/amp_sound_mode7" android:singleLine="true"/>
+        </LinearLayout>
+        <Button android:textSize="22px" android:textColor="@drawable/custontextcolor" android:layout_gravity="bottom" android:id="@+id/s_banlance3" android:background="@drawable/dsp_b_mode1" android:paddingBottom="14px" android:layout_width="120px" android:layout_height="68px" android:layout_marginLeft="208px" android:layout_marginBottom="12px" android:text="@string/amp_sound_mode1" android:singleLine="true"/>
+        <LinearLayout android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="120px" android:layout_height="136px" android:layout_marginRight="56px" android:layout_marginBottom="12px">
+            <Button android:textSize="22px" android:textColor="@drawable/custontextcolor" android:id="@+id/s_banlance2" android:background="@drawable/dsp_b_mode1" android:paddingBottom="14px" android:layout_width="120px" android:layout_height="68px" android:text="@string/amp_sound_mode6" android:singleLine="true"/>
+            <Button android:textSize="22px" android:textColor="@drawable/custontextcolor" android:id="@+id/s_banlance5" android:background="@drawable/dsp_b_mode1" android:paddingBottom="14px" android:layout_width="120px" android:layout_height="68px" android:text="@string/amp_sound_mode8" android:singleLine="true"/>
+        </LinearLayout>
+        <Button android:textSize="22px" android:textColor="@drawable/custontextcolor" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/s_banlance0" android:background="@drawable/dsp_b_mode1" android:paddingBottom="14px" android:layout_width="120px" android:layout_height="68px" android:layout_marginRight="208px" android:layout_marginBottom="12px" android:text="@string/amp_sound_mode5" android:singleLine="true"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="53px" android:layout_marginLeft="38px" android:layout_marginTop="25px">
+        <Button android:textSize="20px" android:textColor="@color/white" android:id="@+id/bt_common" android:background="@drawable/bt_sound_pattern" android:layout_width="153px" android:layout_height="match_parent" android:text="@string/sound_common" android:maxLines="1"/>
+        <Button android:textSize="20px" android:textColor="@color/white" android:id="@+id/bt_specialty" android:background="@drawable/bt_sound_pattern" android:layout_width="153px" android:layout_height="match_parent" android:layout_marginLeft="26px" android:text="@string/sound_specialty" android:maxLines="1"/>
+    </LinearLayout>
+</FrameLayout>

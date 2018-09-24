@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:mtc="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/dsp_distance_bg" android:layout_width="510px" android:layout_height="380px" android:layoutDirection="ltr">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="28px" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="46px" android:layout_marginTop="24px" android:text="@string/speaker_distance_setting" android:maxLines="1"/>
+        <FrameLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="350px" android:layout_height="52px" android:layout_marginTop="112px">
+            <TextView android:textSize="22px" android:textColor="@color/white" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="120px" android:layout_height="match_parent" android:text="@string/trumpet_h_distance" android:maxLines="1"/>
+            <LinearLayout android:layout_gravity="right" android:background="@drawable/distance_input_bg" android:layout_width="212px" android:layout_height="match_parent">
+                <ImageButton android:layout_gravity="center_vertical" android:id="@+id/speaker_h_down" android:background="@drawable/dsp_bt_down" android:layout_width="44px" android:layout_height="46px" android:layout_marginLeft="5px" android:layout_marginTop="1px"/>
+                <TextView android:textSize="25px" android:textColor="@color/white" android:gravity="center" android:id="@+id/speaker_h_info" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1"/>
+                <ImageButton android:layout_gravity="center_vertical" android:id="@+id/speaker_h_up" android:background="@drawable/dsp_bt_up" android:layout_width="44px" android:layout_height="46px" android:layout_marginTop="1px" android:layout_marginRight="5px"/>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="350px" android:layout_height="52px" android:layout_marginTop="218px">
+            <TextView android:textSize="22px" android:textColor="@color/white" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="120px" android:layout_height="match_parent" android:text="@string/trumpet_v_distance" android:maxLines="1"/>
+            <LinearLayout android:layout_gravity="right" android:background="@drawable/distance_input_bg" android:layout_width="212px" android:layout_height="match_parent">
+                <ImageButton android:layout_gravity="center_vertical" android:id="@+id/speaker_v_down" android:background="@drawable/dsp_bt_down" android:layout_width="44px" android:layout_height="46px" android:layout_marginLeft="5px" android:layout_marginTop="1px"/>
+                <TextView android:textSize="25px" android:textColor="@color/white" android:gravity="center" android:id="@+id/speaker_v_info" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1"/>
+                <ImageButton android:layout_gravity="center_vertical" android:id="@+id/speaker_v_up" android:background="@drawable/dsp_bt_up" android:layout_width="44px" android:layout_height="46px" android:layout_marginTop="1px" android:layout_marginRight="5px"/>
+            </LinearLayout>
+        </FrameLayout>
+        <Button android:textSize="25px" android:textColor="@color/white" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/affirm" android:background="@drawable/dsp_bt_affirm" android:layout_width="158px" android:layout_height="57px" android:layout_marginBottom="24px" android:text="@string/affirm"/>
+    </FrameLayout>
+</LinearLayout>
