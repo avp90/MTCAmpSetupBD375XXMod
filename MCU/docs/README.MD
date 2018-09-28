@@ -6,8 +6,8 @@
 
 # Files
 - [Guide_GS288.pdf](Guide_GS288.pdf) - Guide / Info: How I patched MCU firmware version GS_2.88
-- [SoundPatched.zip](https://www.sendspace.com/file/isdcd4) - MCU's firmware what I patched up to now (with some steps and IDA files)
-- [SoundPatchTrueStudio](https://forum.xda-developers.com/attachment.php?attachmentid=4596197&d=1536959880) - original Project for Atollic TrueStudio
+- [SoundPatched.zip @sendspace](https://www.sendspace.com/file/isdcd4) - MCU's firmware what I patched up to now (with some steps and IDA files)
+- [SoundPatchTrueStudio @XDA](https://forum.xda-developers.com/attachment.php?attachmentid=4596197&d=1536959880) - original Project for Atollic TrueStudio
 - [SoundPatchTrueStudio](../SoundPatchTrueStudio) - **current version of** Project for Atollic TrueStudio
 
 ## What you must know yet?
@@ -17,4 +17,4 @@ You make changes to the Firmware at your own risk.
 You must be sure what you are doing. Otherwise you block/brick the Unit.  
   
 I hope that nobody will have to use this  
-[Guide how to unlock bricked MCU units](https://forum.xda-developers.com/android-auto/mtcd-android-head-units-general/guide-how-to-unlock-bricked-mcu-units-t3748646)
+[Guide how to unlock bricked MCU units @XDA](https://forum.xda-developers.com/android-auto/mtcd-android-head-units-general/guide-how-to-unlock-bricked-mcu-units-t3748646)
