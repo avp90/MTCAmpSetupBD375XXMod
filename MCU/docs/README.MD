@@ -6,8 +6,8 @@
 
 # Files
 - [Guide_GS288.pdf](Guide_GS288.pdf) - Guide / Info: How I patched MCU firmware version GS_2.88
-- [SoundPatched.zip](https://www.sendspace.com/file/isdcd4) - MCU's firmware what I patched up to now (with some steps and IDA files)
-- [SoundPatchTrueStudio](https://forum.xda-developers.com/attachment.php?attachmentid=4596197&d=1536959880) - original Project for Atollic TrueStudio
+- [SoundPatched.zip @sendspace](https://www.sendspace.com/file/isdcd4) - MCU's firmware what I patched up to now (with some steps and IDA files)
+- [SoundPatchTrueStudio @xda](https://forum.xda-developers.com/attachment.php?attachmentid=4596197&d=1536959880) - original Project for Atollic TrueStudio
 - [SoundPatchTrueStudio](../SoundPatchTrueStudio) - **current version of** Project for Atollic TrueStudio
 
 ## What you must know yet?
